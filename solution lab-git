@@ -1,0 +1,92 @@
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~ (master)
+$ git clone https://github.com/adrianlarrea/IronAdrian
+Cloning into 'IronAdrian'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~ (master)
+$ git branch "classmate"
+fatal: not a valid object name: 'master'
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~ (master)
+$ pwd
+/c/Users/it-it
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~ (master)
+$ rmdir IronAdrian
+rmdir: failed to remove 'IronAdrian': Directory not empty
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~ (master)
+$ pwd
+/c/Users/it-it
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~ (master)
+$ cd /c/Users/it-it/IronAlexej2
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ #git branch "classmate"
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ git branch "classmate"
+fatal: a branch named 'classmate' already exists
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ #echo I enrolled Ironhack's Data Analytics bootcamp because, I want to become Data Analyst.
+ >> Alexej.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ ls
+Alexej.txt  IronAdrian/  about.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ cat Alexej.txt
+I enrolled Ironhack's Data Analytics bootcamp because, I want to become Data Analyst
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ git add .
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ git status
+On branch classmate
+Your branch is up to date with 'origin/classmate'.
+
+nothing to commit, working tree clean
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ git commit -m "new branch classmate"
+On branch classmate
+Your branch is up to date with 'origin/classmate'.
+
+nothing to commit, working tree clean
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ git pull https://github.com/adrianlarrea/IronAdrian
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 257 bytes | 25.00 KiB/s, done.
+From https://github.com/adrianlarrea/IronAdrian
+ * branch            HEAD       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ git pull https://github.com/Alexej2022/IronAlexej2                            From https://github.com/Alexej2022/IronAlexej2
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ git merge https://github.com/adrianlarrea/IronAdrian
+merge: https://github.com/adrianlarrea/IronAdrian - not something we can merge
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ git merge https://github.com/Alexej2022/IronAlexej2
+merge: https://github.com/Alexej2022/IronAlexej2 - not something we can merge
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/IronAlexej2 (classmate)
+$ git push
+Everything up-to-date
